@@ -1,0 +1,23 @@
+
+<div class="spoledtoc" id="accordionSPOLED">
+
+{{#tocRepo}}
+      <div class="coursetoc-header" id="heading{{{topicID}}}" role="list">
+        <h6 class="coursetoc-title">
+          <a href="#collapse{{{topicID}}}" type="a" data-toggle="collapse" data-target="#collapse{{{topicID}}}" aria-expanded="{{{topicAriaExp}}}" aria-controls="collapse{{{topicID}}}">
+            {{topicTitle}} <i class="more-less fa {{{topicIcon}}}" aria-hidden="true"></i>
+          </a>
+        </h6>
+      </div>
+      <div id="collapse{{{topicID}}}" class="collapse {{{topicCollapse}}}" aria-labelledby="heading{{{topicID}}}" data-parent="#accordionSPOLED">
+        <div class="card-body-spoledtoc">
+          <ul class="sidebar">
+            {{#subTopicRepo}}
+            <li><a href="{{#subHref}}{{.}}{{/subHref}}">{{#subTitle}}{{.}}{{/subTitle}}</a></li>
+            {{/subTopicRepo}}
+          </ul>
+        </div>
+      </div>
+ {{/tocRepo}}
+
+</div>

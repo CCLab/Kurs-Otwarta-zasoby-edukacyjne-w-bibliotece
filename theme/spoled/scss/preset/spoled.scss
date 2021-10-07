@@ -1,0 +1,1095 @@
+@font-face {
+    font-family: 'Rubik';
+    src: url([[font:theme|Rubik-Italic.woff2]]) format('woff2'),
+        url([[font:theme|Rubik-Italic.woff]]) format('woff'),
+        url([[font:theme|Rubik-Italic.ttf]]) format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Rubik';
+    src: url([[font:theme|Rubik-Medium.woff2]]) format('woff2'),
+        url([[font:theme|Rubik-Medium.woff]]) format('woff'),
+        url([[font:theme|Rubik-Medium.ttf]]) format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Rubik';
+    src: url([[font:theme|Rubik-Light.woff2]]) format('woff2'),
+        url([[font:theme|Rubik-Light.woff]]) format('woff'),
+        url([[font:theme|Rubik-Light.ttf]]) format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Rubik';
+    src: url([[font:theme|Rubik-LightItalic.woff2]]) format('woff2'),
+        url([[font:theme|Rubik-LightItalic.woff]]) format('woff'),
+        url([[font:theme|Rubik-LightItalic.ttf]]) format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Rubik';
+    src: url([[font:theme|Rubik-MediumItalic.woff2]]) format('woff2'),
+        url([[font:theme|Rubik-MediumItalic.woff]]) format('woff'),
+        url([[font:theme|Rubik-MediumItalic.ttf]]) format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Rubik';
+    src: url([[font:theme|Rubik-Bold.woff2]]) format('woff2'),
+        url([[font:theme|Rubik-Bold.woff]]) format('woff'),
+        url([[font:theme|Rubik-Bold.ttf]]) format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Rubik';
+    src: url([[font:theme|Rubik-Black.woff2]]) format('woff2'),
+        url([[font:theme|Rubik-Black.woff]]) format('woff'),
+        url([[font:theme|Rubik-Black.ttf]]) format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Rubik';
+    src: url([[font:theme|Rubik-Regular.woff2]]) format('woff2'),
+        url([[font:theme|Rubik-Regular.woff]]) format('woff'),
+        url([[font:theme|Rubik-Regular.ttf]]) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Rubik';
+    src: url([[font:theme|Rubik-BlackItalic.woff2]]) format('woff2'),
+        url([[font:theme|Rubik-BlackItalic.woff]]) format('woff'),
+        url([[font:theme|Rubik-BlackItalic.ttf]]) format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Rubik';
+    src: url([[font:theme|Rubik-BoldItalic.woff2]]) format('woff2'),
+        url([[font:theme|Rubik-BoldItalic.woff]]) format('woff'),
+        url([[font:theme|Rubik-BoldItalic.ttf]]) format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+// Bootstrap variables
+
+$white:    #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #868e96 !default;
+$gray-700: #495057 !default;
+$gray-800: #373a3c !default;
+$gray-900: #212529 !default;
+$black:    #000 !default;
+
+$blue:    #1177d1 !default;
+$indigo:  #6610f2 !default;
+$purple:  #613d7c !default;
+$pink:    #e83e8c !default;
+$red:     #d9534f !default;
+$orange:  #f0ad4e !default;
+$yellow:  #ff7518 !default;
+$green:   #5cb85c !default;
+$teal:    #20c997 !default;
+$cyan:    #5bc0de !default;
+
+$spoled-pri: #559FBD !default;
+$spoled-sec: #E14642 !default;
+
+$primary:       $spoled-pri !default;
+$secondary:     $spoled-sec !default;
+$success:       $green !default;
+$info:          $cyan !default;
+$warning:       $yellow !default;
+$danger:        $red !default;
+$light:         $gray-100 !default;
+$dark:          $gray-800 !default;
+
+// Options
+$enable-rounded: false !default;
+
+// Body
+$body-color:    $gray-800 !default;
+
+// Fonts
+$font-size-base: 0.9375rem !default;
+$headings-font-weight:   300 !default;
+
+// Navbar
+$navbar-dark-hover-color:           rgba($white, 1) !default;
+$navbar-light-hover-color:          rgba($black, .9) !default;
+
+// Breadcrumbs
+$breadcrumb-padding-y:              .25rem !default;
+$breadcrumb-padding-x:              0 !default;
+$breadcrumb-item-padding:           .5rem !default;
+$breadcrumb-margin-bottom:          0 !default;
+$breadcrumb-bg:                     transparent !default;
+$breadcrumb-divider: "/" !default;
+$breadcrumb-divider-rtl: "/" !default;
+
+// Alerts
+$alert-border-width:                0 !default;
+
+$card-group-margin: .25rem;
+
+// stylelint-disable
+$theme-colors: () !default;
+$theme-colors: map-merge((
+    primary: $primary,
+    secondary: $gray-400,
+    success: $success,
+    info: $info,
+    warning: $orange,
+    danger: $danger,
+    light: $gray-100,
+    dark: $gray-800
+), $theme-colors);
+// stylelint-enable
+
+// Import FontAwesome.
+@import "fontawesome";
+
+// Import All of Bootstrap
+@import "bootstrap";
+
+// Import Core moodle CSS
+@import "moodle";
+
+// Preset CSS
+
+body {
+    -webkit-font-smoothing: antialiased;
+	font-family: 'Rubik';
+	color: $black;
+}
+
+a {
+	color: $black;
+}
+
+.navbar {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .08);
+}
+
+.filemanager-container,
+.filepicker-filelist {
+    @extend .border;
+}
+
+// Rounded user pictures
+.userpicture {
+    border-radius: 50%;
+}
+
+// Reset the default styling back to the bootstrap defaults for
+// the secondary outline button because gray-200 is much too light
+// for an outline button.
+.btn-outline-secondary {
+    @include button-outline-variant($gray-600);
+    border-color: $border-color;
+}
+
+@include bg-variant(".bg-gray", $gray-200);
+
+.navbar-brand .site-name {
+    visibility: hidden;
+}
+.intro_oewp {
+    background-color: #559fbd;
+}
+.mediaplugin>div {
+    max-width: 800px!important;
+}
+.home-intro #intro {
+    text-align: center;
+    font-weight: bold;
+    font-size: 26px;
+    margin-top: 40px;
+    margin-bottom: 40px
+}
+
+@media (min-width: 479px) {
+    .home-intro {
+        background-image:url([[pix:theme|header-home2]]);
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-position: center;
+        padding-top: 60px;
+        padding-bottom: 60px
+    }
+}
+
+@media (max-width: 1155px) {
+    .front {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .home-intro #intro {
+        font-size:21px
+    }
+
+    .col-md-8 {
+        padding: 0 !important
+    }
+}
+
+@media (min-width: 2151px) {
+    .col-md-offset-2 {
+        margin-left: 16.6666666667%;
+    }
+    .home-intro #intro {
+        margin-left:300px !important;
+        margin-right: 350px !important
+    }
+}
+
+@media (min-width: 1821px) and (max-width: 2150px) {
+    .col-md-offset-2 {
+        margin-left: 16.6666666667%;
+    }
+    .home-intro #intro {
+        margin-left: 260px !important;
+        margin-right: 280px !important;
+    }
+}
+
+@media (min-width: 1566px) and (max-width: 1820px) {
+    .col-md-offset-2 {
+        margin-left: 16.6666666667%;
+    }
+    .home-intro #intro {
+        margin-left:200px !important;
+        margin-right: 220px !important
+    }
+}
+
+@media (min-width: 1311px) and (max-width: 1565px) {
+    .col-md-offset-2 {
+        margin-left: 16.6666666667%;
+    }
+    .home-intro #intro {
+        margin-left:180px !important;
+        margin-right: 200px !important
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1310px) {
+    .col-md-offset-2 {
+        margin-left: 16.6666666667%;
+    }
+    .home-intro #intro {
+        margin-left:140px !important;
+        margin-right: 160px !important
+    }
+
+    .container-footer {
+        text-align: center !important;
+    }
+
+    img.footer-logo {
+        padding-left: 0 !important;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    img.license {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    p.footer {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    img.footer-sponsor {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+@media (min-width: 685px) and (max-width: 991px) {
+    .col-md-offset-2 {
+        margin-left: 16.6666666667%;
+    }
+    .home-intro #intro {
+        margin-left:180px !important;
+        margin-right: 200px !important
+    }
+    .container-footer {
+        text-align: center !important;
+    }
+
+    img.footer-logo {
+        padding-left: 0 !important;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    img.license {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    p.footer {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    img.footer-sponsor {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+@media (min-width: 552px) and (max-width: 684px) {
+
+    .jumbotron header h1 {
+        top: 55px !important;
+        font-size: 35pt !important;
+    }
+
+    .home-intro #intro {
+        margin-left:120px !important;
+        margin-right: 130px !important
+    }
+    .container-footer {
+        text-align: center !important;
+    }
+
+    img.footer-logo {
+        padding-left: 0 !important;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    img.license {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    p.footer {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    img.footer-sponsor {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+@media (min-width: 479px) and (max-width: 551px) {
+
+    .jumbotron header h1 {
+        top: 55px !important;
+        font-size: 35pt !important;
+    }
+
+    .home-intro #intro {
+        margin-left:100px !important;
+        margin-right: 100px !important
+    }
+    .container-footer {
+        text-align: center !important;
+    }
+
+    img.footer-logo {
+        padding-left: 0 !important;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    img.license {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    p.footer {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    img.footer-sponsor {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 478px) {
+    .jumbotron header h1 {
+        top: 55px !important;
+        font-size: 35pt !important;
+    }
+
+    .home-intro #intro {
+        margin-left:20px !important;
+        margin-right: 20px !important
+    }
+    .container-footer {
+        text-align: center !important;
+    }
+
+    img.footer-logo {
+        padding-left: 0 !important;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    img.license {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    p.footer {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    img.footer-sponsor {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 489px) and (min-width: 358px) {
+.jumbotron header h1 {
+    left: 0 !important;
+    right: 0 !important;
+    font-size: 30pt !important;
+    top: 0 !important;
+}
+}
+
+.front h2 {
+    margin: 1em 0em 1em 0em;
+}
+
+.course-1 .book_content h4  {
+    font-size: 36px;
+    font-weight: 400;
+    color: $black;
+    margin-bottom: 40px;
+    margin-top: -25PX;
+    text-align: center;
+}
+
+.menu.block, .course-1 .block_book_toc {
+    background-color: #3c7c96;
+    line-height: 1;
+    padding-left: 50px;
+    position: relative;
+    font-size: 17px;
+    font-weight: 700;
+    color: #fff;
+    list-style-type: none;
+}
+
+.menuwrapper li {
+    margin-bottom: 28px;
+}
+
+.course-1 .block_book_toc ul li{
+    margin-top: 0.8em;
+}
+
+.course-1.path-mod-book .book_toc_none ul ul {
+    margin-left: 40px!important;
+}
+
+.course-1 .book_content h3, .front h2  {
+    font-size: 40px;
+    font-weight: bold;
+    color: #c54c46;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.course-1 .block_book_toc a:hover {
+    color: #000!important;
+    text-decoration: none!important;
+}
+
+.menu.block .selected {
+    color: #000;
+}
+
+.menu.block .notselected a, .course-1 .block_book_toc a {
+    color: #ffffff!important;
+}
+
+.menu.block li {
+    list-style-type: none;
+}
+.menu.block h5, .course-1 .block_book_toc h5 {
+    font-size: 40px;
+    font-weight: bold;
+    padding-bottom: 30px;
+    color: #FFFFFF;
+}
+
+.background-green {
+    background-color: #3FA29D;
+    margin-top: -2px;
+}
+
+h2.manifest-title {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+span.violet {
+    color: #603768;
+}
+span.white {
+    color: #ffffff;
+}
+p.manifest {
+    font-size: 18px !important;
+}
+img.manifest-logo {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+p.manifest-people {
+    font-size: 20px;
+    font-weight: bold;
+}
+img.manifest-logo {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+p.white {
+    color: #ffffff;
+}
+a.dictionary {
+    text-decoration: none;
+}
+
+a.content-link {
+    color: #3c7c96 !important;
+}
+
+img.footer-logo {
+    height: 110px;
+    padding-left: 30px;
+}
+
+img.license {
+    height: 30px;
+    margin-bottom: 5px;
+}
+
+img.footer-sponsor {
+    width: 195px;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.footer-bg-spoled {
+    min-height: 200px;
+    background-color: #B8B8B8;
+    padding-top: 48px!important;
+    color: #000!important;
+}
+
+#sponsors {
+    padding-left: 20px;
+}
+
+p.footer {
+    font-size: 14px;
+}
+
+#page-footer a{
+    color: $secondary;
+}
+
+.block_coursetoc {
+    background-color: #3C7C96;
+}
+
+.block_coursetoc .card-title {
+    font-size: 40px;
+    font-weight: bold;
+    padding-left: 25px;
+    padding-bottom: 30px;
+    color: #FFFFFF;
+}
+
+a.project {
+    color: #c54c46;
+}
+
+.jumbotron {
+    height: auto;
+    padding: 0 !important;
+    margin: 0 !important;
+    background-size: auto;
+    background-color: transparent;
+    position: relative;
+    top: 105px;
+}
+.jumbotron video {
+        width: 100%;
+        height: auto;
+}
+
+.jumbotron header h1 {
+    font-family: 'Rubik', sans-serif !important;
+    font-weight: bold;
+    font-size: 60px;
+    color: #ffffff;
+    position: absolute;
+    top: 41%;
+    left: 0;
+    right: 0;
+}
+
+.btn-fp {
+    display: inline-block;
+    margin-bottom: 0;
+    margin-top: 0 !important;
+    font-weight: bold;
+    color: #000000 !important;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background-image: none;
+    white-space: nowrap;
+    padding: 15px 30px;
+    line-height: 1.428571429;
+    border: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    position: absolute;
+    bottom: 5%;
+    width: 200px;
+    margin-left: -100px;
+}
+.btn-default-fp{
+    background-color: #fff;
+    border-color: #fff;
+}
+.btn-default-fp:hover {
+    background: #B8B8B8;
+    border-color: #8790a5;
+    text-decoration: none;
+}
+
+.btn-lg-fp{
+    border-radius: 0px !important;
+    font-size: 18px;
+}
+
+.navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus, #nav-drawer .nav-link:hover, #nav-drawer .nav-link:focus {
+    color: $primary;
+    font-weight: bold;
+    font-size: 17pt;
+    text-transform: lowercase;
+    -webkit-transition: color 0.5s ease-in-out;
+    -moz-transition: color 0.5s ease-in-out;
+    -ms-transition: color 0.5s ease-in-out;
+    -o-transition: color 0.5s ease-in-out;
+    transition: color 0.5s ease-in-out;
+}
+
+.navbar-light .navbar-nav .nav-link, #nav-drawer .nav-link {
+    color: $black;
+    font-weight: bold;
+    font-size: 17pt;
+    text-transform: lowercase;
+}
+
+.container-front {
+    width: 100% !important;
+    padding: 0;
+    margin-top: 13em;
+}
+
+.front{
+    line-height: 1.8;
+    font-size: 16px;
+}
+
+
+/*--------------------------------------------------------------
+# Zwiększenie paska nawigacyjnego jak na spoledkurs.centrumcyfrowe.pl
+--------------------------------------------------------------*/
+
+.navbar {
+    max-height: 105px;
+    height: 105px;
+}
+
+#nav-drawer {
+    top: 105px;
+    height: calc(100% - 105px);
+}
+
+#page {
+    margin-top: 105px;
+}
+
+//Poprawka wyświetlania okna wpisywania wiadomości w obszarze wiadomości
+.message-app.drawer {
+    top: 105px;
+    height: calc(100% - 105px);
+}
+
+textarea.form-control {
+    max-width: 100%;
+    width: 100%;
+}
+
+
+/*--------------------------------------------------------------
+# Strona typu SPOLED
+--------------------------------------------------------------*/
+
+.spoled-project {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 326px;
+    min-height: 326px;
+    width: 100%;
+    position: relative;
+    top: 84px;
+}
+
+.spoledpage {
+    margin: 4em auto;
+    padding: 0 0.5em 0 0.5em!important;
+}
+
+.spoledpage #region-main {
+    border: 0px;
+}
+
+
+.spoledpage-settings{
+    top: 28em;
+    right: 1em;
+    z-index: 9999;
+}
+
+.generalbox-abp {
+    margin: 0px 10px 0px 10px;
+}
+
+.spoledpage p {
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.spoledpage-header {
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    min-height: 326px;
+    background-color: #559eba;
+}
+
+.spoledpage-header img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-height: 326px;
+    width: 100%;
+    min-width: 1300px;
+}
+
+.spoledpage-header h1 {
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    font-size: 60px;
+    font-family: 'Rubik', sans-serif !important;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*--------------------------------------------------------------
+# Paserk nawigacji
+--------------------------------------------------------------*/
+
+.navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus, #nav-drawer .nav-link:hover, #nav-drawer .nav-link:focus {
+    color: $primary;
+    font-weight: bold;
+    font-size: 17pt;
+    text-transform: lowercase;
+    -webkit-transition: color 0.5s ease-in-out;
+    -moz-transition: color 0.5s ease-in-out;
+    -ms-transition: color 0.5s ease-in-out;
+    -o-transition: color 0.5s ease-in-out;
+    transition: color 0.5s ease-in-out;
+}
+
+.navbar-light .navbar-nav .nav-link, #nav-drawer .nav-link {
+    color: $black;
+    font-weight: bold;
+    font-size: 17pt;
+    text-transform: lowercase;
+}
+
+@mixin login-font-style {
+    font-size: 12px;
+    font-weight: 700;
+  }
+.usertext.mr-1 {
+    @include login-font-style;
+}
+
+@include media-breakpoint-down(sm) {
+.usermenu .login {
+    @include login-font-style;
+    line-height: 1rem;
+    }
+}
+
+/*--------------------------------------------------------------
+# Książka
+--------------------------------------------------------------*/
+
+#page-mod-book-view .book_content.dimmed_text{
+	color: $black!important;
+}
+
+/*--------------------------------------------------------------
+# Lekcja
+--------------------------------------------------------------*/
+
+#page-mod-lesson-view .box.py-3.branchbuttoncontainer.horizontal {
+    display: flex!important;
+}
+
+#page-mod-lesson-view .contents p, #page-mod-book-view .contents p {
+    font-size: 16px;
+    line-height: 2;
+    margin: 0 0 10.5px;
+}
+
+#page-mod-lesson-view .screen-content, #page-mod-book-view .screen-content {
+    margin-top: 40px;
+    margin-bottom: 60px;
+    font-size: 16px;
+}
+
+#page-mod-lesson-view .content, #page-mod-book-view .content {
+    line-height: 2;
+}
+
+.path-mod-lesson #page-content h3, .course-1 .book_content h3, .front h2  {
+    font-size: 40px;
+    font-weight: bold;
+    color: #c54c46;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+/*--------------------------------------------------------------
+# Zadanie
+--------------------------------------------------------------*/
+
+#page-mod-assign-view .generalbox {
+    font-size: 16px;
+    line-height: 2;
+    margin: 0 0 10.5px;
+}
+
+.path-mod-assign #page-content h3 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #c54c46;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+/*--------------------------------------------------------------
+# Forum
+--------------------------------------------------------------*/
+
+
+.firstpost .roleuser {
+    border-bottom: solid 5px $secondary;
+}
+
+// Forum kolory belek użytkowników wymagane wprowadzenie zmian w post.php i discussion_summary.php mod\forum\classes\local\exporters\
+
+#page-mod-forum-discuss .color-teacher, #page-mod-forum-view .color-teacher {
+    border: solid 3px $spoled-pri!important;
+}
+
+#page-mod-forum-discuss .color-manager, #page-mod-forum-view .color-manager {
+    border: solid 3px $spoled-sec!important;
+}
+
+
+
+/*--------------------------------------------------------------
+# Stopka
+--------------------------------------------------------------*/
+
+#page-footer .usertour, #page-footer .purgecaches, #page-footer .tool_dataprivacy, #page-footer .policiesfooter {
+    text-align: center;
+}
+// Cookie popup
+.eupopup-body a {
+    color: $secondary;
+}
+
+/*--------------------------------------------------------------
+# Poprawki dostępności
+--------------------------------------------------------------*/
+
+#maincontent.jumbotron {
+    height: auto;
+    overflow: auto;
+}
+
+/*--------------------------------------------------------------
+# Poprawka wysuwanego menu
+--------------------------------------------------------------*/
+.nav-menu-title {
+    color: #000;
+    font-weight: 700;
+    font-size: 36pt;
+    text-transform: capitalize;
+    z-index: 1;
+}
+.nav-menu-spoled{
+    background-color: $white;
+    margin-left: -20px;
+    padding-left: 20px;
+
+}
+.nav-menu-title:before {
+    content: '';
+    display: block;
+    background: $primary;
+    width: 80px;
+    height: 10px;
+    position: absolute;
+    z-index: 1;
+    margin: 60px 0px 0px 2px;
+}
+
+.nav-menu-title:after {
+    content: '';
+    display: block;
+    background: $secondary;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    z-index: -10;
+    margin: -70px 0 0 135px;
+}
+
+.nav-menu-spoled .show>.nav-link:hover {
+    background-color: transparent;
+}
+
+.nav-menu-spoled .show>.nav-link {
+    background-color: transparent;
+}
+
+.navbar-custom-menu-fix {
+    flex-wrap: wrap;
+    max-width: 60%;
+}
+
+/*--------------------------------------------------------------
+# Ekran logowania
+--------------------------------------------------------------*/
+
+.or-login {
+    color: #000;
+    font-weight: 700;
+    font-size: 17pt;
+    text-transform: uppercase;
+}
+
+.info-login,.info-login p, .info-login p a {
+    font-size: 12px;
+}
+
+.or-login:before {
+    content: '';
+    display: block;
+    background: $primary;
+    width: 6px;
+    height: 11px;
+    position: absolute;
+    margin: -20px 25px 5px -30px;
+}
+
+.or-login:after {
+    content: '';
+    display: block;
+    background: $secondary;
+    width: 44px;
+    height: 7px;
+    position: absolute;
+    margin: 20px 1px -13px 21px;
+}
+
+
+/*--------------------------------------------------------------
+# PDF Export
+--------------------------------------------------------------*/
+
+
+.exportpdf {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/*--------------------------------------------------------------
+# Poprawka dla zadania #637
+--------------------------------------------------------------*/
+
+.btn-group .btn {
+    margin: 0px 5px 0px 5px;
+}
+
+/*--------------------------------------------------------------
+# Poprawka dla zadania #678
+--------------------------------------------------------------*/
+
+.message-app.drawer {
+    width: 400px;
+}
+.message-app.hidden {
+    right: -400px;
+}
+.message-app.main {
+    min-height: 700px;
+}

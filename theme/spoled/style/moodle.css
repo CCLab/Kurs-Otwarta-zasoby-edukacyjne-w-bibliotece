@@ -1,0 +1,64 @@
+@media (min-width: 992px) {
+  body.drawer-hide {
+    margin-left: 0px!important; } }
+
+
+[data-region="blocks-column-l"] {
+    width: 360px;
+    float: left;
+}
+
+@media (max-width: 1199.98px) {
+    [data-region="blocks-column-l"] {
+        width: 100%; }
+    [data-region="blocks-column"] {
+        width: 100%; }
+}
+
+.path-grade-report-grader [data-region="blocks-column-l"] {
+    width: 100%;
+    clear: both;
+}
+
+#region-main-settings-menu.has-block-r,
+#region-main.has-block-r {
+    display: inline-block;
+    width: calc(100% - 375px); }
+#region-main-settings-menu.has-block-l,
+#region-main.has-block-l {
+    display: inline-block;
+    width: calc(100% - 375px);
+    float: right; }
+#region-main-settings-menu.has-block-r-l,
+#region-main.has-block-r-l {
+    display: inline-block;
+    width: calc(100% - 750px);
+    margin: 0px 15px 0px 15px; }
+
+  @media (max-width: 1199.98px) {
+    #region-main-settings-menu.has-block-r,
+    #region-main.has-block-r {
+      width: 100%;
+      /* MDL-63102 - Remove extra space at bottom.
+        If modifying make sure block-region is horizontally stacked when in full screen */
+      display: block; }
+      #region-main-settings-menu.has-block-l,
+      #region-main.has-block-l {
+        width: 100%;
+        /* MDL-63102 - Remove extra space at bottom.
+          If modifying make sure block-region is horizontally stacked when in full screen */
+        display: block; }
+    #region-main-settings-menu.has-block-r-l,
+    #region-main.has-block-r-l {
+        width: 100%;
+        margin: 0;
+        /* MDL-63102 - Remove extra space at bottom.
+        If modifying make sure block-region is horizontally stacked when in full screen */
+        display: block; } }
+
+.preferences-container .preference-table .preference-row .preference-state .preference-state-status-container {
+    width: 90px;
+}
+
+
+
